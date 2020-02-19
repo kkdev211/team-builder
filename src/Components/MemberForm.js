@@ -5,9 +5,9 @@ console.log(props);
     //3 set up state for Form
  const [teamMember, setTeamMember] = useState({
     id: "initial id",
-    name: "initial name",
-    email: "initial email",
-    role: "initial role"
+    name: "",
+    email: "",
+    role: ""
 
  });
  //4 set up OnChange event when input text changes
@@ -35,23 +35,23 @@ return(
             placeholder="Enter name" 
             id="name"
             name="name"
-            value={teamMember.title}
+            value={teamMember.name}
             onChange={handleChanges}/>
             <br></br>
          <label htmlFor="email">Email</label>    
             <textarea 
-            id="note" 
-            name="body" 
+            id="email" 
+            name="email" 
             placeholder="Enter email" 
-            value={teamMember.body} 
+            value={teamMember.email} 
             onChange={handleChanges}/>
             <br></br>
         <label htmlFor="role">Role</label>
             <textarea 
-            id="note" 
-            name="body" 
+            id="role" 
+            name="role" 
             placeholder="Enter role" 
-            value={teamMember.body} 
+            value={teamMember.role} 
             onChange={handleChanges}/>
       {/* Step 9: Submit form with button and onSubmit */}
       <br></br>
