@@ -37,14 +37,24 @@ return(
             name="name"
             value={teamMember.title}
             onChange={handleChanges}/>
-         <label htmlFor="note">Note</label>
-    <textarea 
-        id="note" 
-        name="body" 
-        placeholder="Add your note" 
-        value={teamMember.body} 
-        onChange={handleChanges}/>
+            <br></br>
+         <label htmlFor="email">Email</label>    
+            <textarea 
+            id="note" 
+            name="body" 
+            placeholder="Enter email" 
+            value={teamMember.body} 
+            onChange={handleChanges}/>
+            <br></br>
+        <label htmlFor="role">Role</label>
+            <textarea 
+            id="note" 
+            name="body" 
+            placeholder="Enter role" 
+            value={teamMember.body} 
+            onChange={handleChanges}/>
       {/* Step 9: Submit form with button and onSubmit */}
+      <br></br>
       <button type="submit">Add Member</button>
     </form>
  );
